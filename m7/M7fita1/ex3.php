@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ejercicio 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M7 UF1 Ejercicio 4</title>
+    <style>
+        table, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <table style="border: 1px solid black; border-collapse: collapse;">
+    <table>
         <?php
-            
-            $num_filas = 3;
-            $num_colum = 4;
-            for($i = 0; $i <= $num_filas; $i++){
+            $columna = 5;
+            $fila = 5;
+            for ($i = 0; $i < $columna; $i++) {
                 echo "<tr>";
-                echo "<td style='border: 1px solid black; padding: 5px;'>$i</td>";
-                
-                for($j = 1; $j <= $num_colum; $j++){
-                    echo "<td style='border: 1px solid black; padding: 5px;'>" . ($i + $j) . "</td>";
+                for ($j = 0; $j < $fila; $j++) {
+                    echo "<td>".($i+$j)."</td>";
                 }
                 echo "</tr>";
             }

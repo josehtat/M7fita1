@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ex1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M7 UF1 Ejercicio 1</title>
+    <style>
+        table, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10;
+        }
+    </style>
 </head>
 <body>
-    <table style="border: 1px solid black; border-collapse: collapse;">
+    <table>
         <tr>
             <?php
-
-                for($i = 0; $i <= 7; $i++){
-
-                    echo "<td style='border: 1px solid black; border-collapse: collapse;'> $i </td>";
-
+                $num = 6;
+                for ($i = 0; $i < $num; $i++) { 
+                    echo "<td>$i</td>";
                 }
             ?>
-
         </tr>
-
     </table>
-    
+
 </body>
 </html>
-

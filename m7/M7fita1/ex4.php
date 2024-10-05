@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ejercicio 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M7 UF1 Ejercicio 4</title>
+    <style>
+        table, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<table style="border: 1px solid black; border-collapse: collapse;">
+    <table>
         <?php
-            $num_filas = 4;
-            $num_colum = 5;
-
-            for ($i = 0; $i <= $num_filas; $i++) {
+            $columna = 5;
+            $fila = 4;
+            for ($i = 0; $i <= $fila; $i++) {
                 echo "<tr>";
-
-                for ($j = 0; $j <= $num_colum; $j++) {
+                for ($j = 0; $j <= $columna; $j++) {
                     if ($i == 0 && $j == 0) {
-                        echo "<td style='border: 1px solid black; padding: 5px;'>&nbsp;</td>";
+                        echo "<td></td>";
                     } elseif ($i == 0) {
-                        echo "<td style='border: 1px solid black; padding: 5px;'>".$j."</td>";
+                        echo "<td>".($i+$j)."</td>";
                     } elseif ($j == 0) {
-                        echo "<td style='border: 1px solid black; padding: 5px;'>".chr(65 + $i - 1)."</td>";
+                        echo "<td>".chr(65 + $i - 1)."</td>";
                     } else {
-                        echo "<td style='border: 1px solid black; padding: 5px;'>&nbsp;</td>";
+                        echo "<td></td>";
                     }
                 }
                 echo "</tr>";

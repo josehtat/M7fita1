@@ -1,39 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ex2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M7 UF1 Ejercicio 2</title>
+    <style>
+        table, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <table style="border: 1px solid black; border-collapse: collapse;">
+    <table>
         <tr>
             <?php
-                
-                for($i = 0; $i < 8; $i++){
-                    echo "<td style='border: 1px solid black; border-collapse: collapse;'>".chr(65 + $i)."</td>";
-
+                $char = 6;
+                for ($i = 0; $i < $char; $i++) { 
+                    echo "<td>".chr(65 + $i)."</td>";
                 }
             ?>
-
         </tr>
-
-    </table>
-    <table style="border: 1px solid black; border-collapse: collapse;">
         <tr>
             <?php
-                $num = 8;
-                for($i = 0; $i <= $num; $i++){
-
-                    echo "<td style='border: 1px solid black; border-collapse: collapse;'> $i </td>";
-
+                $num = 6;
+                for ($i = 0; $i < $num; $i++) { 
+                    echo "<td>$i</td>";
                 }
             ?>
-
         </tr>
-
     </table>
-    
 </body>
 </html>
-
